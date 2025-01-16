@@ -1,0 +1,87 @@
+body {
+    background-color: black;
+    margin: 8vw;
+    font-family: inter, serif;
+}
+
+h1{
+    letter-spacing: 1vw;
+    font-size:5vw;
+    text-align: center;
+    font-weight: 700;
+}
+h2{
+    color: white;
+}
+.button {
+    text-align: center;
+    background-color: #F58710;
+    padding: 2vw 5vw;
+    display: inline-block;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5vw;
+    }
+.headerImg{
+    background-image: url(images/IMG_0127.JPG);
+    position:relative;
+    background-size: cover;
+}
+
+.navLogo img{
+    max-width: 25%;
+    max-height: 18vw;
+    }
+.navnarContainer{
+    border-bottom: #F58710 solid;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1vw;
+    margin-left: 20%;
+    margin-right: 20%;
+   
+  
+}
+
+.navbar a{
+    padding-bottom: 1vw;
+    text-decoration: none;
+    color: white; 
+    font-size: medium;
+    font-weight: 100;
+    letter-spacing: 0,5vw; 
+    font-size: 1.5vw;    
+}
+
+.navbar :hover {
+   color: #F58710;
+   
+}
+.heroMain h1{
+    margin: 3vw;
+}
+.heroMain{
+    background-image: url(images/banner-travel-header-with-man-sitting-on-the-roof-2021-12-09-20-11-29-utc.jpg);
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    margin-top: 3vw;
+    height: 50vw;
+}
+.heroMain img{
+    float: right;
+}
+.heroMain .button{
+    margin-top: 10vw;
+    float: left;
+    margin-left: 5vw;
+}
