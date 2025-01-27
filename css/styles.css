@@ -27,7 +27,7 @@ h2{
     font-size: 1.5vw;
     }
 .headerImg{
-    background-image: url(images/IMG_0127.JPG);
+    background-image: url(../images/IMG_0127.JPG);
     position:relative;
     background-size: cover;
 }
@@ -68,7 +68,7 @@ h2{
     margin: 3vw;
 }
 .heroMain{
-    background-image: url(images/banner-travel-header-with-man-sitting-on-the-roof-2021-12-09-20-11-29-utc.jpg);
+    background-image: url(../images/banner-travel-header-with-man-sitting-on-the-roof-2021-12-09-20-11-29-utc.jpg);
     width: 100%;
     position: relative;
     background-size: cover;
@@ -85,3 +85,48 @@ h2{
     float: left;
     margin-left: 5vw;
 }
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .carousel-track-container {
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-slide {
+    min-width: 25%;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .carousel-button-left {
+    left: 10px;
+  }
+  
+  .carousel-button-right {
+    right: 10px;
+  }
