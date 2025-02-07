@@ -1,6 +1,6 @@
 body {
     background-color: black;
-    margin: 8vw;
+    margin:1vw 3vw;
     font-family: inter, serif;
 }
 
@@ -12,31 +12,45 @@ h1{
 }
 h2{
     color: white;
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 100;
+    letter-spacing: 1vw;
+}
+p{
+    color: white;
+    font-weight: 100;
+    text-align: center;
 }
 .button {
-    text-align: center;
+    
     background-color: #F58710;
-    padding: 2vw 5vw;
+    padding:1% 2%;
     display: inline-block;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+   
 }
 
 .button a{
     text-decoration: none;
     color: white;
     font-size: 1.5vw;
+    text-align: center;
+    
+
     }
 .headerImg{
     background-image: url(../images/IMG_0127.JPG);
     position:relative;
     background-size: cover;
-}
+    }
+
 
 .navLogo img{
     max-width: 25%;
     max-height: 18vw;
     }
-.navnarContainer{
+.navbarContainer{
     border-bottom: #F58710 solid;
 }
 .navbar{
@@ -46,22 +60,20 @@ h2{
     margin-top: 1vw;
     margin-left: 20%;
     margin-right: 20%;
-   
-  
 }
 
 .navbar a{
     padding-bottom: 1vw;
     text-decoration: none;
-    color: white; 
-    font-size: medium;
-    font-weight: 100;
+    color:#F58710; 
+    font-weight:bolder;
     letter-spacing: 0,5vw; 
-    font-size: 1.5vw;    
+    font-size: 2vw;  
+    
 }
 
 .navbar :hover {
-   color: #F58710;
+   color: black;
    
 }
 .heroMain h1{
@@ -78,18 +90,17 @@ h2{
     height: 50vw;
 }
 .heroMain img{
-    float: right;
+    float: center;
 }
 .heroMain .button{
     margin-top: 10vw;
-    float: left;
-    margin-left: 5vw;
+    margin: auto;
 }
 .carousel {
     position: relative;
     overflow: hidden;
-    width: 80%;
-    margin: 0 auto;
+    width: 90%;
+    
   }
   
   .carousel-track-container {
@@ -107,6 +118,8 @@ h2{
     min-width: 25%;
     box-sizing: border-box;
     padding: 20px;
+    flex: 0 0 calc(100%/3);
+    max-width: calc(100%/3);
   }
   
   .carousel-button {
@@ -130,3 +143,167 @@ h2{
   .carousel-button-right {
     right: 10px;
   }
+
+ /* @media (max-width: 768px) {
+    .navbar {
+      display: none;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 60%;
+      width: 50%;
+      background-color: #2d6d09;
+      padding: 20px;
+      transition: transform 0.3s ease;
+      transform: translateX(100%);
+      z-index: 9999;
+      overflow-y: auto;
+    }
+  
+    .nav-links.active {
+      display: flex;
+      transform: translateX(0);
+    }
+  
+    .nav-links li {
+      margin: 20px 0;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .nav-links a {
+      font-size: 24px;
+      padding: 15px 0;
+      color: white;
+    }
+  
+    .hamburger {
+      display: block;
+      font-size: 36px;
+      padding: 5px;
+    }
+  
+    .close-menu {
+      display: block;
+      font-size: 24px;
+      color: white;
+      text-align: right;
+      cursor: pointer;
+      padding: 10px;
+      background: none;
+      border: none;
+      margin-bottom: 20px;
+    }
+  
+    .close-menu:hover {
+      color: #e5e5e5;
+    }
+  
+    .close-hamburger {
+      display: none;
+      font-size: 36px;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 100;
+    }
+  
+    .nav-links.active .close-hamburger {
+      display: block;
+    }
+    .carousel-slide {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+  }
+ */
+ @media (min-width: 768px) {
+    .hamburger {
+        display: none;
+    font-size: 32px;
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-left: auto;
+    z-index: 100;
+}}
+ @media (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+    /* Ukrywamy nawigację na małych ekranach */
+    .navbar.active {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 70vh;
+        width: 50%;
+        background-color: #F58710;
+        padding: 20px;
+        
+        z-index: 9999;
+        overflow-y: auto;
+    }
+
+    /* Pokazujemy menu, gdy jest aktywne */
+   /* .navbar.active {
+        transform: translateX(0);
+        display:flex;
+        max-height: 50%;
+        background-color: #F58710;
+    }*/
+
+    /* Układ linków w menu */
+    .navbar a {
+        font-size: 24px;
+        padding: 3vw ;
+        color: black;
+        text-align: center;
+        display: block;
+    }
+
+    /* Styl hamburgera */
+    .hamburger {
+        display: block;
+        font-size: 36px;
+        background: none;
+        border: none;
+        color: black;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 10000;
+    }
+}
+
+  .aboutMe {
+    display: flex;
+    }
+
+    .aboutMe img {
+        max-width: 30vw;
+    }
+    .aboutMe p{
+        margin-left: 5vw;
+    }
+footer {
+    background-color: rgb(54, 52, 52);
+    padding:1vw;
+}
+.copy {
+    text-align: center;
+}
+.textAbout {
+    justify-content: center;
+}
+

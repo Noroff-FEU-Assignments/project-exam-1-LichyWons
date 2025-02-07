@@ -10,7 +10,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-<script src="js/script.js" type="module"></script>
+<script src="js/script.js" type="module" defer></script>
     </head>
     <body>
         <header>
@@ -19,18 +19,21 @@
                     <a href="index.html"><img src="images/ARCTIC OVERLAND.png" alt="website logo">
                     </a>
                 </div>
+                <div class="navbarContainer">
+                    <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+                    <nav class="navbar">
+                        <a href="index.html">Home</a>
+                        <a href="listofposts.html">Blog</a>
+                        <a href="About.html">About</a>
+                        <a href="contact.html">Contact</a>
+                    </nav>
+                </div>
             </div> 
-            <div class="navnarContainer">
-            <div class="navbar">
-                <a href="index.html">Home</a>
-                <a href="listofposts.html">Blog</a>
-                <a href="About.html">About</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </div>
+            
+            
         </header>
         <main>
-            <section>
+            <section class="heroSection">
             <div class="heroMain">
                 <h1>OVERLAND EXPEDITIONS</h1>
                 <div class="button">
@@ -49,64 +52,30 @@
                     <button class="carousel-button carousel-button-right" aria-label="Next slide">→</button>
                     <button id="viewMoreButton" style="display:none;">View More</button>
                 </div>
-               
-                    <div class="latestPostsContainer">
-                    <div class="post"> 
-                        <a href="post.html">
-                        <img src="images/lulea1.png">
-                        <h3 class="postTitle">LULEÅ, SWEDEN</h3>
-                        <a class="PostShortText">"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but...</a>
-                        <div class="readButton">
-                            <a href="post.html">READ</a>
-                        </div>
-                        </a>
-                        </div>
-                    </div>
-
-                    <div class="post"> 
-                        <a href="post.html">
-                        <img src="images/lulea1.png">
-                        <h3 class="postTitle">LULEÅ, SWEDEN</h3>
-                        <a class="PostShortText">"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but...</a>
-                        <div class="readButton">
-                            <a href="post.html">READ</a>
-                        </div>
-                        </a>
-                        </div>
-                    </div>
-                
-
-                    <div class="post"> 
-                        <a href="post.html">
-                        <img src="images/lulea1.png">
-                        <h3 class="postTitle">LULEÅ, SWEDEN</h3>
-                        <a class="PostShortText">"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but...</a>
-                        <div class="readButton">
-                            <a href="post.html">READ</a>
-                        </div>
-                        </a>
-                        </div>
-                    </div>
-                
-                
-
-            </section>
-            <section>
-                <h2>ABOUT US</h2>
-                <img src="images/family.png">
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Nostra finibus pellentesque himenaeos consequat dapibus felis molestie suscipit dictumst. Ultrices pharetra varius nunc amet fames eu dictum senectus. Conubia lacus mollis; magnis eros bibendum ipsum pellentesque magna. Convallis orci mollis torquent molestie interdum sagittis in. Cursus nullam quis nostra hendrerit ut cursus augue primis interdum. Eros montes eleifend primis habitasse, luctus non quis. Placerat ad praesent tincidunt eros ut enim iaculis aptent vivamus. Vitae dignissim ad malesuada magna suspendisse urna? Non mus congue et mi efficitur.</p>
-                <div class="Button">
+            </section>    
+            <section class="about">
+                <h2>ABOUT</h2>
+                <div class="aboutMe">
+                    <img src="images/8BC9016C-7A44-455D-8DFD-4C6B735EF6DD_1_105_c.jpeg">
+                    <div class="textandbutton"><p>
+                Lorem ipsum odor amet, consectetuer adipiscing elit. Nostra finibus pellentesque himenaeos consequat dapibus felis molestie suscipit dictumst. Ultrices pharetra varius nunc amet fames eu dictum senectus. Conubia lacus mollis; magnis eros bibendum ipsum pellentesque magna. Convallis orci mollis torquent molestie interdum sagittis in. Cursus nullam quis nostra hendrerit ut cursus augue primis interdum. Eros montes eleifend primis habitasse, luctus non quis. Placerat ad praesent tincidunt eros ut enim iaculis aptent vivamus. Vitae dignissim ad malesuada magna suspendisse urna? Non mus congue et mi efficitur.</p>
+            
+                <div class="button">
                     <a href="about.html.html">READ MORE...</a>
                     </div>
+                    </div>
+                    </div>
             </section>
+            
         </main>
         <footer>
-            <div class="navbarfooter">
+            <div class="navbar">
                 <a href="index.html">Home</a>
                 <a href="listofposts.html">Blog</a>
                 <a href="About.html">About</a>
                 <a href="contact.html">Contact</a>
             </div>
+          
             <div class="copy">
                 <p> Copyrigts Arctic Overland Explorer 2024</p>
             </div>
