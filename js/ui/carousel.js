@@ -164,7 +164,7 @@ const createSlide = async (post) => {
     const imgSrc = extractImageSrc(post.content.rendered);
 
     const link = document.createElement('a');
-    link.href = `blog-post.html?id=${post.id}`;
+    link.href = `single-post.html?id=${post.id}`;
     link.style.textDecoration = 'none';
 
     const img = document.createElement('img');

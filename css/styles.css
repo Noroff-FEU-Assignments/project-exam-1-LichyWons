@@ -5,18 +5,25 @@ body {
 }
 
 h1{
+    color: white;
     letter-spacing: 1vw;
     font-size:5vw;
     text-align: center;
     font-weight: 700;
 }
-h2{
+h2
+{
     color: white;
     text-align: center;
     font-size: 3vw;
     font-weight: 100;
     letter-spacing: 1vw;
+    text-decoration: none;
 }
+h3{
+    color: white;
+}
+h4{color: white;}
 p{
     color: white;
     font-weight: 100;
@@ -28,10 +35,6 @@ p{
     padding:1% 2%;
     display: inline-block;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-   
-}
-
-.button a{
     text-decoration: none;
     color: white;
     font-size: 1.5vw;
@@ -306,4 +309,83 @@ footer {
 .textAbout {
     justify-content: center;
 }
+.post {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers horizontally */
+    text-align: center;  /* Ensures text is centered too */
+    border-bottom: solid #F58710;
+    margin-top: 10vw;
 
+}
+.post img {
+    width: 50vw;   /* Adjust size */
+    height: auto;   /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space below */
+}
+
+#post-container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+#post-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+figure{
+    display: none;
+}
+ol{
+    color:#F58710;
+}
+.wp-block-list{
+    color: #F58710;
+}
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    margin-top: 20px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+.aboutlist {
+    color: #F58710;
+}
+.contact-container {
+    max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    color: white;
+}

@@ -17,6 +17,6 @@ export const fetchData = async (url) => {
 };
 
 export const fetchBlogById = async (id) => {
-    const url = `https://krzysztofbytniewski.com/wp-json/wp/v2/posts/${id}?_embed=true`;
+    const url = `https://krzysztofbytniewski.com/wp-json/wp/v2/posts/${postId}`;
     return await fetchData(url);
 };

@@ -21,7 +21,7 @@
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
-<script src="js/ui/about-page.js" type="module" defer></script>
+<script src="js/api/single-post.js" type="module" defer></script>
     </head>
     <body>
         <header>
@@ -43,22 +43,14 @@
             
             
         </header>
-        <div class="contact-container">
-            <h1>Contact Me</h1>
-            <p>If you have any questions, collaboration ideas, or just want to chat about overlanding and Arctic travel, feel free to reach out. Fill out the form below, and I'll get back to you as soon as possible!</p>
-            
-            <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Your Email</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Your Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                
-                <button class="button" type="submit">SEND MESSAGE</button>
-            </form>
+        <div id="post-container">
+            <h1 id="post-title"></h1>
+            <img id="post-image" class="clickable-image" src="" alt="Post Image" style="cursor: pointer; max-width: 100%;">
+            <div id="image-modal" class="modal">
+                <span class="close-modal">&times;</span>
+                <img class="modal-content" id="full-image">
+            </div>
+            <div id="post-content"></div>
         </div>
         <footer>
             
@@ -69,3 +61,4 @@
 
         </footer>
     </body>
+</html>
