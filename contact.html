@@ -21,7 +21,7 @@
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
-<script src="js/ui/about-page.js" type="module" defer></script>
+<script src="js/ui/contact-form.js" type="module" defer></script>
     </head>
     <body>
         <header>
@@ -30,32 +30,41 @@
                     <a href="index.html"><img src="images/ARCTIC OVERLAND.png" alt="website logo">
                     </a>
                 </div>
-                <div class="navbarContainer">
-                    <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
-                    <nav class="navbar">
-                        <a href="index.html">Home</a>
-                        <a href="listofposts.html">Blog</a>
-                        <a href="about.html">About</a>
-                        <a href="contact.html">Contact</a>
-                    </nav>
-                </div>
-            </div> 
-            
-            
+                
+            </div>
+            <div class="navbarContainer">
+                    
+                <nav class="navbar">
+                    <a href="index.html">Home</a>
+                    <a href="listofposts.html">Blog</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                    
+                </nav>
+           
+                <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+        </div>  
         </header>
         <div class="contact-container">
             <h1>Contact Me</h1>
             <p>If you have any questions, collaboration ideas, or just want to chat about overlanding and Arctic travel, feel free to reach out. Fill out the form below, and I'll get back to you as soon as possible!</p>
             
-            <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <form onsubmit="validateForm(event)">
                 <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name">
+                <div id="nameError" class="error"></div>
                 
                 <label for="email">Your Email</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email">
+                <div id="emailError" class="error"></div>
+                
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject">
+                <div id="subjectError" class="error"></div>
                 
                 <label for="message">Your Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+                <textarea id="message" name="message" rows="5"></textarea>
+                <div id="messageError" class="error"></div>
                 
                 <button class="button" type="submit">SEND MESSAGE</button>
             </form>
